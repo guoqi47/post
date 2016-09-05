@@ -13,7 +13,7 @@ $(function(){
 		});
 		//
 		//按钮的透明度
-		$("#loginbtn").hover(function () {
+		$("#submit_info").hover(function () {
 			$(this).stop().animate({
 				opacity: '1'
 			}, 600);
@@ -74,8 +74,18 @@ $(function(){
 		});
 		*/
 		//关闭
-		$(".close_btn").hover(function () { $(this).css({ color: 'black' }) }, function () { $(this).css({ color: '#999' }) }).on('click', function () {
+		$(".close_btn").hover(function () { 
+			$(this).css({ color: 'black' }) 
+			}, function () { 
+				$(this).css({ color: '#999' }) })
+			.on('click', function () {
+				$(".loginBox").fadeOut("fast");
+				$("#mask").css({ display: 'none' });
+		});
+
+		$("#mask").on('click', function () {
 			$(".loginBox").fadeOut("fast");
 			$("#mask").css({ display: 'none' });
 		});
+
 	});

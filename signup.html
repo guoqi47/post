@@ -19,7 +19,7 @@
 		<!-- 左浮动 -->
 		<div class="sign_left">
 		<!-- 表单内容 -->
-			<form method="post" action="">
+			<form method="post" action="signup.php">
 				<!-- <div class="info_list">
 					<div class="tit">
 						昵称<sup>* </sup>
@@ -35,8 +35,8 @@
 					<p>性别</p>
 				</div>
 				<div class="inp">
-					<div><input type="text" id="username" placeholder="请输入您的昵称" /></div>
-					<div><input type="password" id="passwd_1" placeholder="请输入您的密码" /></div>
+					<div><input type="text" id="username" name="usern" placeholder="请输入您的昵称" /></div>
+					<div><input type="password" id="passwd_1" name="userk" placeholder="请输入您的密码" /></div>
 					<div><input type="password" id="passwd_2" placeholder="请再次输入您的密码" /></div>
 					<div class="gender">
 						<label><input name="gender" type="radio" value="" />男</label> 
@@ -44,7 +44,7 @@
 						<label><input name="gender" type="radio" value="" />保密</label> 
 					</div>
 					<div class="signup_sub">
-						<a href="" >立即注册</a>
+						<button href="" type="submit" value="submit">立即注册</button>
 					</div>
 				</div>
 
